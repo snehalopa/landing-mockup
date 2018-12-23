@@ -1,41 +1,53 @@
 body{
     margin:0;
     padding:0;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-left:100px;
-    margin-right:100px;
     background-image: url("bg-desktop.svg");
-    color: purple;
+    color: hsl(257, 40%, 49%);
 }
 #heading{
-    height:150px;
     width: 100%;
-    
-}
+    margin: 0px 100px;
+    }
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700');
 #huddle{
     font-size: 40px;
-    font-weight: bolder;
-    
+    font-weight: 400 700;
+    font-family: 'Poppins', sans-serif;
+}
+.clear{
+    clear: both;
+}
+.container{
+    margin:0 auto;
+    width:100%;
+}
+.parent{
+    width:100%;
+}
+.twocolumns{
+    width:50%;
+    float:left;
 }
 
-#bodytext{
-    float: right;
-    height: 348px;
-    width: 35%;
-    margin-top: -480px;
+.secondcolumnspacing{
     
+    padding-top: 40px;
 }
 #textheading{
     font-size: 40px;
-    font-weight: bolder;
+    font-weight: 400 700;
     line-height: 60px;
-    
+    font-family: 'Poppins', sans-serif;
 }
 #text{
     line-height:23px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
 }
 #register {
-    background-color: purple; 
+    background-color: hsl(257, 40%, 49%);; 
     border: none;
     color: white;
     padding: 20px;
@@ -46,7 +58,45 @@ body{
     border-radius: 40px;
     padding: 20px 55px;
   }
-.logos{
-    float: right;
-    margin-right:10px;  
+  .column{
+    width:100%;
+    text-align: right;  
+    margin-right:10px; 
+      
+  }
+
+  #image{
+      width:100%;
+  }
+  #socialmedia{
+      width:100%;
+  }
+  .footer{
+      height:5em;
+  }
+  @media screen and (max-width:800px){
+      .twocolumns{
+          width:100%;
+      }
+      .secondcolumnspacing{
+          padding-top:85px;
+      }
+  }
+  @media screen and (max-width:1440px){
+      .container{
+        width: 1280px;
+      }
+      .secondcolumnspacing{
+        padding-top:85px;
+    }
+  }
+  @media screen and (max-width:375px){
+      .container{
+          width: 80%;
+          text-align: center;
+      }
+      .column{
+      padding-top:50px;
+      text-align: center;
+      }
   }
